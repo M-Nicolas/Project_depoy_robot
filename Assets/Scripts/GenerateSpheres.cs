@@ -8,7 +8,10 @@ public class GenerateSpheres : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-        Instantiate(robot);
+        if (generate)
+        {
+            Instantiate(robot);
+        }
 	}
 	
 	// Update is called once per frame
